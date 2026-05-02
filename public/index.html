@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Market Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Auth Section -->
+        <section id="auth-section" class="active">
+            <div class="glass-card">
+                <h1 id="auth-title">Welcome to E-Market</h1>
+                <div class="tabs">
+                    <button class="tab-btn active" data-role="buyer">Buyer</button>
+                    <button class="tab-btn" data-role="seller">Seller</button>
+                </div>
+                
+                <div id="login-form" class="form-container">
+                    <h2>Login</h2>
+                    <input type="email" id="login-email" placeholder="Email" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <button id="login-btn" class="primary-btn">Sign In</button>
+                    <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+                </div>
+
+                <div id="register-form" class="form-container hidden">
+                    <h2>Register</h2>
+                    <input type="text" id="reg-name" placeholder="Full Name" required>
+                    <input type="email" id="reg-email" placeholder="Email" required>
+                    <input type="password" id="reg-password" placeholder="Password" required>
+                    <input type="text" id="reg-address" placeholder="Address (Buyer only)" required>
+                    <button id="register-btn" class="primary-btn">Create Account</button>
+                    <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seller Dashboard -->
+        <section id="seller-dashboard" class="hidden">
+            <header>
+                <div class="user-info">
+                    <span id="seller-name">Seller Name</span>
+                    <button id="logout-btn-seller" class="secondary-btn">Logout</button>
+                </div>
+            </header>
+            <main>
+                <div class="dashboard-grid">
+                    <div class="glass-card add-product">
+                        <h3>Add New Product</h3>
+                        <input type="text" id="prod-name" placeholder="Product Name">
+                        <textarea id="prod-desc" placeholder="Description"></textarea>
+                        <input type="text" id="prod-cat" placeholder="Category">
+                        <input type="number" id="prod-price" placeholder="Price">
+                        <button id="add-product-btn" class="primary-btn">Add Product</button>
+                    </div>
+                    <div class="glass-card product-list">
+                        <h3>Your Products</h3>
+                        <div id="seller-products" class="scrollable-list">
+                            <!-- Products will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <!-- Buyer Dashboard -->
+        <section id="buyer-dashboard" class="hidden">
+            <header>
+                <div class="user-info">
+                    <span id="buyer-name">Buyer Name</span>
+                    <button id="logout-btn-buyer" class="secondary-btn">Logout</button>
+                </div>
+            </header>
+            <main>
+                <div class="glass-card">
+                    <h3>Available Products</h3>
+                    <div id="available-products" class="product-grid">
+                        <!-- Products will be injected here -->
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <!-- Notification Toast -->
+        <div id="toast" class="hidden"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
