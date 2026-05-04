@@ -2,7 +2,7 @@
 
 A robust E-commerce Marketplace API built with Node.js and Express, allowing users to register as either Buyers or Sellers. Sellers can manage their products, while Buyers can browse and purchase items.
 
-## 🚀 Features
+##  Features
 
 - **Authentication**: Secure registration and login using JWT and Bcrypt.
 - **Role-based Access**: Different permissions for Buyers and Sellers.
@@ -10,14 +10,14 @@ A robust E-commerce Marketplace API built with Node.js and Express, allowing use
 - **Marketplace Browsing**: Buyers can view all available products.
 - **Transactions**: Simple workflow for buying products.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB (via Mongoose)
 - **Security**: JWT (JSON Web Tokens), Bcrypt
 - **Validation**: Validator.js
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Authentication
 | Register | Login |
@@ -30,7 +30,7 @@ A robust E-commerce Marketplace API built with Node.js and Express, allowing use
 ### Buyer Dashboard (Buy Products)
 ![Buy Products](./images/buyProduct.png)
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 ├── controllers/    # Request handlers
@@ -43,7 +43,7 @@ A robust E-commerce Marketplace API built with Node.js and Express, allowing use
 └── app.js          # Entry point
 ```
 
-## ⚙️ Getting Started
+##  Getting Started
 
 1. **Clone the repository**
 2. **Install dependencies**:
