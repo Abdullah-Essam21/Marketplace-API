@@ -17,7 +17,7 @@ A robust E-commerce Marketplace API built with Node.js and Express, allowing use
 - **Security**: JWT (JSON Web Tokens), Bcrypt
 - **Validation**: Validator.js
 
-##  Screenshots
+##  Some Screenshots
 
 ### Authentication
 | Register | Login |
@@ -26,9 +26,6 @@ A robust E-commerce Marketplace API built with Node.js and Express, allowing use
 
 ### Seller Dashboard (Add Products)
 ![Add Products](./images/addProducts.png)
-
-### Buyer Dashboard (Buy Products)
-![Buy Products](./images/buyProduct.png)
 
 ##  Project Structure
 
